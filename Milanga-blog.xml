@@ -1,0 +1,80 @@
+<snippets namespace="Snippets" license="LGPL v3+" filetypes="*" authors="Javierinsitu" name="LoveIt-Hugo-blog">
+ <script>function fileName() { return document.fileName(); }
+function fileUrl() { return document.url(); }
+function encoding() { return document.encoding(); }
+function selection() { return view.selectedText(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+</script>
+ <item>
+  <match>FrontMatter</match>
+  <fillin>---
+title: ""
+# subtitle: ""
+date:  
+# lastmod: 
+author: "Javierinsitu"
+description: "..."
+categories: [""]
+tags: ["", ""]
+lightgallery: true
+resources:
+    - name: featured-image
+      src: featured-imaged.jpg
+    - name: featured-image-preview
+      src: featured-imaged.jpg
+toc: true
+comments: true
+license: "All posts are licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license."
+draft: false
+---
+
+&lt;!--more--></fillin>
+ </item>
+ <item>
+  <match>admonition</match>
+  <fillin>{{&lt; admonition info "Algunos datos:" true >}}
+
+{{&lt; /admonition >}}</fillin>
+ </item>
+ <item>
+  <match>Date</match>
+  <fillin>${t = (new Date()).toISOString()}</fillin>
+ </item>
+ <item>
+  <match>Tweet</match>
+  <fillin>{{&lt; tweet 917359331535966209 >}}</fillin>
+ </item>
+ <item>
+  <match>Youtube</match>
+  <fillin>{{&lt; youtube w7Ft2ymGmfc >}}
+</fillin>
+ </item>
+ <item>
+  <match>Style</match>
+  <fillin>{{&lt; style "text-align:right; strong{color:#00b1ff;}" >}}
+This is a **right-aligned** paragraph.
+{{&lt; /style >}}</fillin>
+ </item>
+ <item>
+  <match>Image</match>
+  <fillin>{{&lt; image src="image.jpg" title="title" height=64 caption="Lighthouse" >}}</fillin>
+ </item>
+ <item>
+  <match>Map</match>
+  <fillin>{{&lt; mapbox lng=-28.00 lat=-65.00 zoom=12 >}}</fillin>
+ </item>
+ <item>
+  <match>Music</match>
+  <fillin>{{&lt; music url="https://podcast.javierschulz.net.ar/podcast/085-Resistencia-antibiotica.mp3" name="Antibioticos" cover="atb2.jpg" artist="Javierinsitu" >}}</fillin>
+ </item>
+ <item>
+  <match>Person</match>
+  <fillin>{{&lt; person url="https://evgenykuznetsov.org" name="Evgeny Kuznetsov" nick="nekr0z" text="author of this shortcode" picture="https://evgenykuznetsov.org/img/avatar.jpg" >}}</fillin>
+ </item>
+ <item>
+  <match>Date-simple</match>
+  <fillin>${t = (new Date()).toISOString().slice(0, 16).replace("T", " ")} </fillin>
+ </item>
+</snippets>

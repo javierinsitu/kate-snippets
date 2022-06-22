@@ -1,0 +1,127 @@
+<snippets namespace="" license="LGPL v2+" filetypes="Markdown" authors="Javier" name="Notes">
+ <script>function fileName() { return document.fileName(); }
+function fileUrl() { return document.url(); }
+function encoding() { return document.encoding(); }
+function selection() { return view.selectedText(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+</script>
+ <item>
+  <match>Date</match>
+  <fillin>${t = (new Date()).toISOString().slice(0, 16).replace("T", " ")} 
+</fillin>
+ </item>
+ <item>
+  <match>Book</match>
+  <fillin>---
+title:  
+tags: 
+author: 
+source: 
+---
+#  
+
+## Intro
+the book in 3 sentences:
+1. 
+2.
+3.
+
+What did I learn?
+
+
+My top 3 quotes:
+> Quote here.
+
+How I discovered It?
+
+## Summary</fillin>
+ </item>
+ <item>
+  <match>Standard-yaml</match>
+  <fillin>---
+title: 
+tags: 
+author: Javier
+source: 
+---
+
+</fillin>
+ </item>
+ <item>
+  <match>Journal</match>
+  <fillin>${t = (new Date()).toISOString().slice(0, 16).replace("T", " ")} 
+Mood: 🙂🙁😴😠😢🤒
+The day in emojis: 🏥💀👍🧑‍💻🍻🥵🥶👨‍👩‍👧‍👧
+Thought:
+Idea: 
+Done: 
+Reflection: 
+Experience:
+</fillin>
+ </item>
+ <item>
+  <match>Create-uid</match>
+  <fillin>uid: ${t = (new Date()).toISOString().slice(0, 19).replace(/-/g, "").replace(/T/, "").replace(/:/g, "")}
+</fillin>
+ </item>
+ <item>
+  <match>Movie</match>
+  <fillin># 
+
+Year:
+Director:
+Main character:
+Resume:
+</fillin>
+ </item>
+ <item>
+  <match>Hugo-post</match>
+  <fillin>+++
+title = ""
+author = ["javierinsitu"]
+date = ${ta = (new Date()).toISOString()}
+draft = true
+description = ""
+podcast_file = "079-Catamarca.mp3"
+aliases = ["/079"]
+podcast_duration = "00:00"
+episode_banner = "img/episode/viajes/pissis2.jpg"
+episode_image = "img/episode/catamarca.jpg"
+episode = 79
+images = ["img/episode/catamarca.jpg"]
+hosts = ["javierinsitu"]
+explicit = "no"
+categories = [""]
+upcoming = false
+comments = true
++++
+
+{{&lt; table_of_contents >}}
+
+## 
+
+
+## Conclusiones
+
+
+## Referencias
+
+Imagen principal es propia del autor del artículo.
+
+---
+
+All posts are licensed under a [Creative Commons 
+Attribution-NonCommercial-ShareAlike 4.0 International 
+license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+{{&lt; figure src="/88x31.png" >}}
+
+---</fillin>
+ </item>
+ <item>
+  <match>Imagen</match>
+  <fillin>{{&lt; figure src="/img/episode/mapa1.png" width=100% link="/img/episode/mapa1.png" caption="" >}}</fillin>
+ </item>
+</snippets>
