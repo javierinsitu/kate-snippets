@@ -1,4 +1,4 @@
-<snippets namespace="Snippets" license="LGPL v3+" filetypes="*" authors="Javierinsitu" name="LoveIt-Hugo-blog">
+<snippets authors="Javierinsitu" filetypes="*" namespace="Snippets" license="LGPL v3+" name="LoveIt-Hugo-blog">
  <script>function fileName() { return document.fileName(); }
 function fileUrl() { return document.url(); }
 function encoding() { return document.encoding(); }
@@ -76,5 +76,17 @@ This is a **right-aligned** paragraph.
  <item>
   <match>Date-simple</match>
   <fillin>${t = (new Date()).toISOString().slice(0, 16).replace("T", " ")} </fillin>
+ </item>
+ <item>
+  <match>suscribe</match>
+  <fillin>&amp;nbsp;
+
+&amp;nbsp;
+
+&amp;nbsp;
+
+
+:(fa-fade fa-solid fa-podcast): Suscríbete en [Spotify](https://open.spotify.com/show/1abOVmvW5vikNciuDpuJsh),
+ [iVoox](https://www.ivoox.com/podcast-milanga-electronica_sq_f1372875_1.html), [Google Podcast](https://podcasts.google.com/feed/aHR0cHM6Ly9taWxhbmdhZWxlY3Ryb25pY2EuY29tLmFyL2VwaXNvZGUvaW5kZXgueG1s) o en [Apple Podcast](https://podcasts.apple.com/us/podcast/milanga-electrónica/id1193067748).</fillin>
  </item>
 </snippets>

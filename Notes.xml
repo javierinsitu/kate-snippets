@@ -1,4 +1,4 @@
-<snippets namespace="" license="LGPL v2+" filetypes="Markdown" authors="Javier" name="Notes">
+<snippets filetypes="Markdown" authors="Javier" license="LGPL v2+" namespace="" name="Notes">
  <script>function fileName() { return document.fileName(); }
 function fileUrl() { return document.url(); }
 function encoding() { return document.encoding(); }
